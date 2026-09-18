@@ -102,14 +102,14 @@ app.get('/', (req, res) => {
             <h1>Atividade DevOps & Cloud</h1>
             <p>Parabéns! Sua aplicação Node.js foi implementada com sucesso no Azure Web App através da sua esteira CI/CD.</p>
             <p>O App Insights já está monitorando sua aplicação.</p>
-            <a href="/tema" class="btn">🚀 Ver Dados do Banco</a>
+            <a href="Músicas" class="btn">🚀 Ver Dados do Banco</a>
         </div>
     </body>
     </html>
     `);
 });
 
-app.get('/tema', async (req, res) => {
+app.get('Músicas', async (req, res) => {
     try {
         // ALUNOS: Usem a configuração dbConfig para conectar no banco e fazer o SELECT na tabela do tema escolhido!
         await sql.connect(dbConfig);
